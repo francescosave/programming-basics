@@ -19,6 +19,7 @@ make_ordinal(number)
 def make_ordinal(number)
     
     ... build text
+    ... Return an empty string if passed a argument outside range 
     return text_ordinal_num
 
 ```
