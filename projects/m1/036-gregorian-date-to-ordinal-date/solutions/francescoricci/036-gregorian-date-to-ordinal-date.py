@@ -1,17 +1,15 @@
 # Exercise 036-gregorian-date-to-ordinal-date by Francesco Ricci
 
-"""
-This funcion return last day of february mounth of the year passed in function argument
-"""
-def getFebruaryLastDay(anno):
-    return 29 if (anno % 400 == 0) or (anno % 4 == 0 and (not(anno % 100 == 0))) else 28
+def getFebruaryLastDay(year):
+    """
+    This funcion return last day of february mounth of the year passed in function argument
+    """
+    return 29 if (year % 400 == 0) or (year % 4 == 0 and (not(year % 100 == 0))) else 28
 
-
-"""
-This funcion return last day of mounth of the year passed in function argument
-"""
 def getLastDayMounth(day,mounth,year):
-    #gli serve isLeapYear per determinare il giorno successivo dell'ultimo giorno di febbraio'
+    """
+    This funcion return last day of mounth of the year passed in function argument
+    """
 
     mounth_30 = 30
     mounth_31 = 31
@@ -28,10 +26,10 @@ def getLastDayMounth(day,mounth,year):
     return result
 
 
-"""
-This funcion return day's count beetween 1 january and parameter date in function arguments
-"""
 def getOrdinaldate(day,mounth,year):
+    """
+    This funcion return day's count beetween 1 january and parameter date in function arguments
+    """
 
     count_day = 0
 
