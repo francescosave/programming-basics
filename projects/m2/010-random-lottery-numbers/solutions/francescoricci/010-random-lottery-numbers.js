@@ -34,7 +34,4 @@ function getLotteryNumbers() {
   return list
 }
 
-console.log(getLotteryNumbers().toString());
-
-
-
+console.log(`Lottery number generation: ${getLotteryNumbers().toString()}`);
