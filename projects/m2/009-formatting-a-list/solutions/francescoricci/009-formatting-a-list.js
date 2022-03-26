@@ -12,8 +12,3 @@ console.log(filtered2);
 
 //execute join function on the filtered2 array and print its value.
 console.log(filtered2.join(' and '));
-
-
-
-
-
