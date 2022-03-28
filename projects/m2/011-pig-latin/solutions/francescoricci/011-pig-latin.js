@@ -3,7 +3,8 @@
 console.log(wordPigLatin('Office'));
 
 function wordPigLatin(wordEnglish){
-
+   /*This function return word traslated in pig latin */ 
+   
     let pigLatinWord = '';
     let idx = 0;
     let endString = '';
@@ -32,11 +33,13 @@ function wordPigLatin(wordEnglish){
 }
 
 function firstLetter(word){
+    /*This function return only first character of word */ 
+
     return word[0];
 }
 
 function isVowel(character){
-    /*This function return if character is or no vowel */ 
+    /*This function return if character is a vowel */ 
     
     let vowel = 'aAeEiIoOuU';
     vowel.includes(character[0]) ? res = true : res = false
@@ -44,7 +47,7 @@ function isVowel(character){
 }
 
 function isConsonantOrY(character){
-     /*This function return if character is or no consonant plus y includes  */ 
+     /*This function returns if the character is not a consonant plus the y included*/ 
      
     let vowel = 'aeiou';
     vowel.includes(character[0]) ? res = false : res = true
