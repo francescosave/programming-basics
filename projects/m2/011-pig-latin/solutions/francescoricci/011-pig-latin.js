@@ -4,9 +4,8 @@ console.log(wordPigLatin('Office'));
 
 function wordPigLatin(wordEnglish){
    /*This function return word traslated in pig latin */ 
-   
+
     let pigLatinWord = '';
-    let idx = 0;
     let endString = '';
 
     if(isConsonantOrY(firstLetter(wordEnglish))){
@@ -14,7 +13,6 @@ function wordPigLatin(wordEnglish){
         for (let index = 0; index < wordEnglish.length; index++) {
             const element = wordEnglish[index];
             if(isVowel(wordEnglish[index])){
-                 console.log(wordEnglish.substring(index));
                  pigLatinWord = wordEnglish.substring(index);
                  break ;
             }
