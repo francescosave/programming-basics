@@ -10,8 +10,5 @@ module.exports = {
 
         return Math.floor(Math.random() * (max - min) + min);
 
-    },
-    f2: function () {
-        console.log('f2')
     }
 };
