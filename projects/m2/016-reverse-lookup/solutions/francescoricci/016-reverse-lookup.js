@@ -1,16 +1,5 @@
 // exercise 016 reverse lokkup by francesco ricci
-
-
-function reverseLookup(object, searchValue) {
-    /* This function return */
-
-    // varaibles declaration
-    let arrayKey = []
-
-    for (const key in object) if (object[key] === searchValue) arrayKey.push(key);
-
-    return arrayKey.toString();
-}
+const millestone = require('./millestone.js');
 
 // varaibles declaration
 let sidesSearch = 3;
@@ -29,11 +18,11 @@ let sidesFlatGeometricFigures = {
 //Output
 console.log('\n', sidesFlatGeometricFigures);
 console.log('Search sides', sidesSearch);
-console.log('found in ', reverseLookup(sidesFlatGeometricFigures, sidesSearch));
+console.log('found in ', millestone.reverseLookup(sidesFlatGeometricFigures, sidesSearch));
 
 //tests
-console.log('\nTest 1 ', reverseLookup(sidesFlatGeometricFigures, 2).length === 0)
-console.log('Test 2 ', reverseLookup(sidesFlatGeometricFigures, 3).toString() === 'scaleneTriangle,isoscelesTriangle,rectangleTriangle')
-console.log('Test 3 ', reverseLookup(sidesFlatGeometricFigures, 4).toString() === 'rectangle,rhombus,square,trapezoid')
-console.log('Test 4 ', reverseLookup(sidesFlatGeometricFigures, 5).toString() === 'pentagon')
-console.log('Test 5 ', reverseLookup(sidesFlatGeometricFigures, 6).toString() === 'hexagon')
+console.log('\nTest 1 ', millestone.reverseLookup(sidesFlatGeometricFigures, 2).length === 0)
+console.log('Test 2 ', millestone.reverseLookup(sidesFlatGeometricFigures, 3).toString() === 'scaleneTriangle,isoscelesTriangle,rectangleTriangle')
+console.log('Test 3 ', millestone.reverseLookup(sidesFlatGeometricFigures, 4).toString() === 'rectangle,rhombus,square,trapezoid')
+console.log('Test 4 ', millestone.reverseLookup(sidesFlatGeometricFigures, 5).toString() === 'pentagon')
+console.log('Test 5 ', millestone.reverseLookup(sidesFlatGeometricFigures, 6).toString() === 'hexagon')
